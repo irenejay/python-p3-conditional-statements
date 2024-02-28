@@ -1,9 +1,11 @@
 
-def admin_login(username, password):
-    if (username.lower() == "admin" or username.lower() == "sudo") and password == "12345":
-        return "Access granted"
-    else:
-        return "Access denied"
+# def admin_login(username, password):
+#     if (username.lower() == "admin" or username.lower() == "sudo") and password == "12345":
+#         return "Access granted"
+#     else:
+#         return "Access denied"
+    
+    
 
 
 def hows_the_weather(temperature):
@@ -15,6 +17,10 @@ def hows_the_weather(temperature):
         return "It's too dang hot out there!"
     else:
         return "It's perfect out there!"
+    
+print(hows_the_weather(33))   
+print(hows_the_weather(99))   
+print(hows_the_weather(75))
 def fizzbuzz(number):
     if number % 3 == 0 and number % 5 == 0:
         return "FizzBuzz"
@@ -24,6 +30,14 @@ def fizzbuzz(number):
         return "Buzz"
     else:
         return number
+    
+    
+print(fizzbuzz(1))   
+print(fizzbuzz(2))   
+print(fizzbuzz(3))    
+print(fizzbuzz(4))   
+print(fizzbuzz(5))    
+print(fizzbuzz(15))  
 def calculator(operation, num1, num2):
     if operation == "+":
         return num1 + num2
@@ -37,7 +51,11 @@ def calculator(operation, num1, num2):
         print("Invalid operation!")
         return None
 
-
+print(calculator("+", 1, 1))   
+print(calculator("-", 3, 1))    
+print(calculator("*", 3, 2))    
+print(calculator("/", 4, 2))   
+print(calculator("nope", 4, 2))
 
 
 
